@@ -1,0 +1,72 @@
+strict digraph {
+	graph [dpi=50]
+	Japan
+	Japan
+	Japan -> Japan [label=hasName]
+	Netherlands
+	Belgium
+	Netherlands -> Belgium [label=neighbours]
+	Amsterdam
+	Capital
+	Amsterdam -> Capital [label=type]
+	Portugal
+	Country
+	Portugal -> Country [label=type]
+	Spain
+	Portugal
+	Spain -> Portugal [label=neighbours]
+	Spain
+	Country
+	Spain -> Country [label=type]
+	Portugal
+	Portugal
+	Portugal -> Portugal [label=hasName]
+	hasCapital
+	Capital
+	hasCapital -> Capital [label=range]
+	Netherlands
+	"The Netherlands"
+	Netherlands -> "The Netherlands" [label=hasName]
+	Netherlands
+	Country
+	Netherlands -> Country [label=type]
+	Belgium
+	Country
+	Belgium -> Country [label=type]
+	Capital
+	City
+	Capital -> City [label=subClassOf]
+	containsCity
+	Country
+	containsCity -> Country [label=domain]
+	Germany
+	EuropeanCountry
+	Germany -> EuropeanCountry [label=type]
+	hasCapital
+	containsCity
+	hasCapital -> containsCity [label=subPropertyOf]
+	containsCity
+	City
+	containsCity -> City [label=range]
+	Netherlands
+	Amsterdam
+	Netherlands -> Amsterdam [label=hasCapital]
+	Spain
+	Spain
+	Spain -> Spain [label=hasName]
+	Japan
+	Tokyo
+	Japan -> Tokyo [label=hasCapital]
+	Japan
+	Country
+	Japan -> Country [label=type]
+	Portugal
+	Lisbon
+	Portugal -> Lisbon [label=hasCapital]
+	EuropeanCountry
+	Country
+	EuropeanCountry -> Country [label=subClassOf]
+	Spain
+	Madrid
+	Spain -> Madrid [label=hasCapital]
+}
